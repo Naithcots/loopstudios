@@ -1,0 +1,44 @@
+.drawer {
+  position: fixed;
+  inset: 0;
+
+  background-color: black;
+}
+
+.drawer-top {
+  padding: 2rem 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.links {
+  margin-top: 4rem;
+  margin-left: 1.5rem;
+
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+.link {
+  margin-bottom: 1.85rem;
+  display: block;
+  width: fit-content;
+
+  color: white;
+  text-decoration: none;
+}
+
+.link:last-child {
+  margin-bottom: auto;
+}

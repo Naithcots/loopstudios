@@ -1,0 +1,28 @@
+.hero-wrapper {
+  height: 100vh;
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("/images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-wrapper {
+  margin-top: 40%;
+  height: 100%;
+}
+
+.text {
+  margin: 0 1.25rem;
+  padding: 1.25rem;
+  border: 2px solid white;
+
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+
+  color: white;
+}
