@@ -1,0 +1,21 @@
+.leader {
+  margin: 5rem var(--px-site);
+
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+
+  text-transform: uppercase;
+}
+
+.paragraph {
+  margin-inline: 1rem;
+
+  font-size: 1rem;
+  line-height: 2.5ch;
+
+  color: var(--very-dark-gray);
+}

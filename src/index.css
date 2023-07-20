@@ -1,6 +1,8 @@
 :root {
   --dark-gray: hsl(0, 0%, 55%);
   --very-dark-gray: hsl(0, 0%, 41%);
+
+  --px-site: 1.5rem;
 }
 
 * {

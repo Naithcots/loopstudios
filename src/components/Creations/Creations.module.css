@@ -1,0 +1,37 @@
+.title {
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.items {
+  margin: 1rem var(--px-site);
+
+  display: grid;
+  gap: var(--px-site);
+}
+
+.button-wrapper {
+  margin-block: 1.25rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 0.5rem 3rem;
+
+  appearance: none;
+
+  font-size: 1rem;
+  font-family: "Alata", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  border: 2px solid var(--very-dark-gray);
+  background-color: transparent;
+}
