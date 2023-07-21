@@ -1,3 +1,4 @@
+import links from "../../data/links";
 import styles from "./Drawer.module.css";
 import { motion, Variants } from "framer-motion";
 
@@ -32,21 +33,11 @@ const Drawer = ({ toggleDrawer }: Props) => {
         />
       </div>
       <div className={styles.links}>
-        <a href="/" className={styles.link}>
-          about
-        </a>
-        <a href="/" className={styles.link}>
-          careers
-        </a>
-        <a href="/" className={styles.link}>
-          events
-        </a>
-        <a href="/" className={styles.link}>
-          products
-        </a>
-        <a href="/" className={styles.link}>
-          support
-        </a>
+        {links.map((link, idx) => (
+          <a href="/" key={idx} className={styles.link}>
+            {link.title}
+          </a>
+        ))}
       </div>
     </motion.nav>
   );

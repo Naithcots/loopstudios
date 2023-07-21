@@ -1,3 +1,7 @@
+.creations {
+  margin-block: 6rem;
+}
+
 .title {
   font-size: 2rem;
   font-family: "Josefin Sans", sans-serif;
@@ -7,8 +11,6 @@
 }
 
 .items {
-  margin: 1rem var(--px-site);
-
   display: grid;
   gap: var(--px-site);
 }
@@ -34,4 +36,51 @@
 
   border: 2px solid var(--very-dark-gray);
   background-color: transparent;
+
+  transition: color 250ms, background 250ms;
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+}
+
+@media screen and (min-width: 45em) {
+  .creations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 1.25rem;
+  }
+
+  .title {
+    grid-column: 1;
+
+    margin: 0;
+
+    justify-self: flex-start;
+    align-self: center;
+  }
+
+  .button-wrapper {
+    grid-column: 2 / -1;
+    grid-row: 1;
+
+    justify-self: flex-end;
+    align-self: center;
+  }
+
+  .items {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .items {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

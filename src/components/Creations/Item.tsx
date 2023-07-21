@@ -14,6 +14,11 @@ const Item = ({ data }: Props) => {
         alt="background"
         className={styles.background}
       />
+      <img
+        src={data.images.large}
+        alt="background"
+        className={styles["background-desktop"]}
+      />
     </div>
   );
 };

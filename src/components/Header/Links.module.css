@@ -1,0 +1,23 @@
+@media screen and (min-width: 45em) {
+  .links {
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+
+  .link-active {
+    height: 2px;
+
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: -8px;
+
+    background-color: white;
+  }
+}
