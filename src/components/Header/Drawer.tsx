@@ -24,9 +24,13 @@ const Drawer = ({ toggleDrawer }: Props) => {
       exit="exit"
     >
       <div className={styles["drawer-top"]}>
-        <img src="/images/logo.svg" alt="logo" className={styles.logo} />
         <img
-          src="/images/icon-close.svg"
+          src={`${import.meta.env.BASE_URL}/images/logo.svg`}
+          alt="logo"
+          className={styles.logo}
+        />
+        <img
+          src={`${import.meta.env.BASE_URL}/images/icon-close.svg`}
           alt="close-menu"
           className={styles.close}
           onClick={toggleDrawer}

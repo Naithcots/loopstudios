@@ -8,28 +8,32 @@ const Footer = () => {
     <footer className={styles.footer}>
       <Wrapper>
         <div className={styles.container}>
-          <img src="/images/logo.svg" alt="logo" className={styles.logo} />
+          <img
+            src={`${import.meta.env.BASE_URL}/images/logo.svg`}
+            alt="logo"
+            className={styles.logo}
+          />
           <nav className={styles.links}>
             <Links styles={linkStyles} />
           </nav>
           <div className={styles["social-logos"]}>
             <img
-              src="/images/icon-facebook.svg"
+              src={`${import.meta.env.BASE_URL}/images/icon-facebook.svg`}
               alt="facebook"
               className={styles["social-logo"]}
             />
             <img
-              src="/images/icon-twitter.svg"
+              src={`${import.meta.env.BASE_URL}/images/icon-twitter.svg`}
               alt="twitter"
               className={styles["social-logo"]}
             />
             <img
-              src="/images/icon-pinterest.svg"
+              src={`${import.meta.env.BASE_URL}/images/icon-pinterest.svg`}
               alt="pinterest"
               className={styles["social-logo"]}
             />
             <img
-              src="/images/icon-instagram.svg"
+              src={`${import.meta.env.BASE_URL}/images/icon-instagram.svg`}
               alt="instagram"
               className={styles["social-logo"]}
             />

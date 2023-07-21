@@ -6,7 +6,9 @@ const Leader = () => {
     <Wrapper>
       <div className={styles.leader}>
         <img
-          src="/images/mobile/image-interactive.jpg"
+          src={`${
+            import.meta.env.BASE_URL
+          }/images/mobile/image-interactive.jpg`}
           alt=""
           className={styles.image}
         />
